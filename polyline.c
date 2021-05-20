@@ -22,7 +22,7 @@ void dda(int x1, int y1, int x2, int y2)
 	for (int i = 0; i < steps; i++) {
 		x += xInc;
 		y += yInc;
-		glVertex2f(round(x), round(y));
+		glVertex2i(round(x), round(y));
 	}
 }
 
