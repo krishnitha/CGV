@@ -17,8 +17,8 @@ void dda(int x1, int y1, int x2, int y2)
 	float xInc = (float)dx / (float)steps;
 	float yInc = (float)dy / (float)steps;
 	float x = x1, y = y1;
-	glVertex2i(x, y);
 	glBegin(GL_POINTS);
+	glVertex2i(x, y);
 	for (int i = 0; i < steps; i++) {
 		x += xInc;
 		y += yInc;
