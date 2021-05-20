@@ -17,11 +17,12 @@ void dda(int x1, int y1, int x2, int y2)
 	float xInc = (float)dx / (float)steps;
 	float yInc = (float)dy / (float)steps;
 	float x = x1, y = y1;
+	glVertex2f(round(x), round(y));
 	glBegin(GL_POINTS);
 	for (int i = 0; i < steps; i++) {
-		glVertex2f(x, y);
 		x += xInc;
 		y += yInc;
+		glVertex2f(round(x), round(y));
 	}
 }
 
